@@ -62,8 +62,8 @@ Two hybrid strategies were implemented:
 
 ### Prophet Model with MLflow
 - Converted the Prophet modeling process into a script.
-- Tracked model parameters, metrics (e.g., RMSE), and artifacts using MLflow.
+- Tracked model parameters, metrics, and artifacts using MLflow.
 
 ### Regression Models with MLflow
 - Replicated the regression modeling process in script form.
-- Tracked model parameters, metrics (e.g., RMSE), and artifacts using MLflow.
+- Tracked model parameters, metrics, and artifacts using MLflow.
