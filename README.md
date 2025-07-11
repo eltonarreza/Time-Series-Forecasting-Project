@@ -4,14 +4,14 @@
 
 This repository contains a time series forecasting project using multiple modeling approaches, including Facebook Prophet, classical regression models, LightGBM, and hybrid methods. The focus is on predicting product sales across different stores using historical data.
 
-### 📁 Data
+### Data
 
 - `train.csv`: Daily historical sales data for each store-product pair from 2010 to 2018.
 - `test.csv`: Data for 2019, used for testing the models.
 
 ---
 
-## 📊 EDA (Exploratory Data Analysis)
+## EDA (Exploratory Data Analysis)
 
 Performed general exploratory data analysis to investigate:
 
@@ -22,7 +22,7 @@ Performed general exploratory data analysis to investigate:
 
 ---
 
-## 🔮 Prophet Model
+## Prophet Model
 
 - Used Facebook Prophet to train forecasting models on each `(store, product)` pair.
 - Fine-tuned Prophet hyperparameters using a manual grid search.
@@ -30,7 +30,7 @@ Performed general exploratory data analysis to investigate:
 
 ---
 
-## 🧠 Regression Models
+## Regression Models
 
 Developed and evaluated several regression-based forecasting models:
 
@@ -43,11 +43,11 @@ Developed and evaluated several regression-based forecasting models:
 - **LightGBM Regressor**
   - Hyperopt fine-tuning with early stopping
 
-All models were evaluated using RMSE and MAE metrics.
+All models were evaluated using RMSE metric.
 
 ---
 
-## 🔁 Hybrid Models
+## Hybrid Models
 
 Two hybrid strategies were implemented:
 
@@ -58,21 +58,12 @@ Two hybrid strategies were implemented:
 
 ---
 
-## 🧪 MLflow Integration
+## MLflow Integration
 
-### 📌 Prophet Model with MLflow
+### Prophet Model with MLflow
 - Converted the Prophet modeling process into a script.
 - Tracked model parameters, metrics (e.g., RMSE), and artifacts using MLflow.
 
-### 📌 Regression Models with MLflow
+### Regression Models with MLflow
 - Replicated the regression modeling process in script form.
-- Logged hyperparameters, model metrics, and output predictions to MLflow for experiment tracking and comparison.
-
----
-
-## 🛠️ How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+- Tracked model parameters, metrics (e.g., RMSE), and artifacts using MLflow.
