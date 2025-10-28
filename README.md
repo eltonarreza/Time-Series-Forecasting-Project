@@ -2,7 +2,7 @@
 
 ## Contents
 
-This repository contains a time series forecasting project using multiple modeling approaches, including Facebook Prophet, classical regression models, LightGBM, and hybrid methods. The focus is on predicting product sales across different stores using historical data.
+This repository contains a time series forecasting project using multiple modeling approaches, including Facebook Prophet, classical regression models, LightGBM. The focus is on predicting product sales across different stores using historical data.
 
 ### Data
 
@@ -17,9 +17,7 @@ Performed general exploratory data analysis to investigate:
 
 - Trends and seasonality in the time series data.
 - Differences in sales patterns across different `(store, product)` pairs.
-
-**Key Insight**: Time series behavior varies significantly across different store/product combinations, indicating the need for per-group modeling or flexible models.
-
+- 
 ---
 
 ## Prophet Model
@@ -45,25 +43,3 @@ Developed and evaluated several regression-based forecasting models:
 
 All models were evaluated using RMSE metric.
 
----
-
-## Hybrid Models
-
-Two hybrid strategies were implemented:
-
-1. **Weighted Average Ensemble**
-   - Combined predictions from the best regression model and Prophet using a weighted average.
-2. **Stacked Model**
-   - Used Prophet model predictions as an input feature for a regression model.
-
----
-
-## MLflow Integration
-
-### Prophet Model with MLflow
-- Converted the Prophet modeling process into a script.
-- Tracked model parameters, metrics, and artifacts using MLflow.
-
-### Regression Models with MLflow
-- Replicated the regression modeling process in script form.
-- Tracked model parameters, metrics, and artifacts using MLflow.
